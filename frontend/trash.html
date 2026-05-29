@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="icono.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Papelera — Task Manager</title>
+</head>
+<body>
+
+  <div class="app-wrapper">
+    <div class="trash-header">
+      <h1 class="app-title">Papelera<span>.</span></h1>
+      <button id="restoreAllBtn" class="btn-restore-all">↩ Restaurar todo</button>
+    </div>
+
+    <p class="section-label">Tareas eliminadas</p>
+
+    <div id="emptyTrash" class="empty-state" style="display:none">
+      <span class="empty-state__icon">🗑</span>
+      <p class="empty-state__text">La papelera está vacía.</p>
+    </div>
+
+    <ul class="task-list" id="trashList" aria-label="Tareas eliminadas"></ul>
+    <a href="index.html" class="btn-back-link">← Volver a tareas</a>
+  </div>
+
+  <a class="banner-autor" href="https://www.linkedin.com/in/celina-moscardi-bevacqua" target="_blank" rel="noopener noreferrer">
+    <span class="banner-autor__icon">✦</span>
+    Built by <strong>Celina M.</strong>
+  </a>
+
+  <script src="trash.js"></script>
+</body>
+</html>
